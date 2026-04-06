@@ -33,7 +33,7 @@ const Login = () => {
     setLoggedInUser(user);
     localStorage.setItem("loggedInUser", JSON.stringify(user));
     toast.success("Logged in successfully!");
-    navigate("/dashboard");
+    navigate("/dashboard/home");
     reset();
   };
 
