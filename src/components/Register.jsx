@@ -32,6 +32,7 @@ const Register = () => {
     setRegisteredUsers(newUser);
     localStorage.setItem("registeredUsers", JSON.stringify(newUser));
     toast.success("User Registered successfully!");
+    navigate("/dashboard/home");
     reset();
   };
 
